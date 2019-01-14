@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2">
+
+        <com.jiepier.filemanagerzzw.widget.PowerProgressBar
+            android:id="@+id/memoryProgressbar"
+            app:isClockwise="true"
+            app:centerTexts="2.0G/2.7G"
+            app:centerTopText="76%"
+            app:centerBottomText="memory"
+            app:progress="70"
+            app:startAngle="45"
+            app:roundRadiusWeight="0.7"
+            app:roundColor="?attr/colorPrimary"
+            app:roundFillColor="@color/white"
+            android:background="?attr/colorPrimary"
+            style="@style/power_progressbar_style"/>
+
+        <com.jiepier.filemanagerzzw.widget.PowerProgressBar
+            android:id="@+id/storageProgressbar"
+            app:isClockwise="true"
+            app:centerTexts="14G/25G"
+            app:centerTopText="56%"
+            app:centerBottomText="storage"
+            app:startAngle="45"
+            app:progress="50"
+            app:roundColor="?attr/colorPrimary"
+            app:roundFillColor="@color/white"
+            android:background="?attr/colorPrimary"
+            style="@style/power_progressbar_style"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.5">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <com.jiepier.filemanagerzzw.widget.ThemeColorIconView
+                android:id="@+id/item_music"
+                app:icon="@drawable/icon_category_music_white"
+                style="@style/item_category_style"/>
+
+            <com.jiepier.filemanagerzzw.widget.ThemeColorIconView
+                android:id="@+id/item_video"
+                app:icon="@drawable/icon_category_video_white"
+                style="@style/item_category_style" />
+
+            <com.jiepier.filemanagerzzw.widget.ThemeColorIconView
+                android:id="@+id/item_picture"
+                app:icon="@drawable/icon_category_picture_white"
+                style="@style/item_category_style" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.5">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <com.jiepier.filemanagerzzw.widget.ThemeColorIconView
+                android:id="@+id/item_document"
+                style="@style/item_category_style"
+                app:icon="@drawable/icon_category_document_white" />
+
+            <com.jiepier.filemanagerzzw.widget.ThemeColorIconView
+                android:id="@+id/item_zip"
+                app:icon="@drawable/icon_category_zip_white"
+                style="@style/item_category_style" />
+
+            <com.jiepier.filemanagerzzw.widget.ThemeColorIconView
+                android:id="@+id/item_apk"
+                app:icon="@drawable/icon_category_download_white"
+                style="@style/item_category_style" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>
